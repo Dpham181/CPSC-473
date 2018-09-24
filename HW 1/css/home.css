@@ -1,0 +1,101 @@
+header {
+background: #fff;
+border-style: solid;
+position: fixed;
+top:0;
+width: 100%;
+}
+.top-header{
+  align-items: center;
+  background: #333;
+  display: flex;
+  height : 40px;
+  justify-content: center;
+
+}
+.header-a{
+  color: white;
+  text-decoration: underline;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 12px;
+
+}
+body{
+  background: white;
+  width:100%;
+
+}
+.login a{
+  text-decoration: none;
+
+}
+.body-header{
+  background: #fff;
+  color:#333;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  height : 55px;
+  position: fixed;
+  width:100%;
+  text-align: center;
+
+
+
+}
+.flex-bodyheader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 80px 0 0;
+
+}
+.nav a:hover {
+  box-shadow: 0 3px  rgba(0,0,0,.15);
+
+
+}
+
+.w3-dropdown-hover a{
+  box-shadow: 0 3px  rgba(0,0,0,.15);
+
+}
+.nav{
+  align-items: center;
+  display: flex;
+  float:left;
+  margin:0 20px;
+  text-decoration: none;
+}
+h3{
+  font-size: 16px;
+  text-align: center;
+}
+
+.body-organe{
+  background:#FF6363;
+  border-style: solid;
+  max-width: 100%;
+  padding:20px;
+  text-align: center;
+
+
+}
+.body-pageheader p{
+  font-weight: 200;
+  clear: both;
+  color: #fff;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 40px;
+  padding-top: 100px;
+}
+.body-pageheader2 p{
+  color: rgb(254, 255, 116);
+  font-family: nyt-franklin;
+  font-size: 40px;
+}
+.body-pageheader3 p{
+  font-weight: 200;
+  clear: both;
+  color: #fff;
+  font-family: nyt-franklin;
+
+}
