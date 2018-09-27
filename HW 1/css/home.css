@@ -13,6 +13,7 @@ width: 100%;
   justify-content: center;
 
 }
+
 .header-a{
   color: white;
   text-decoration: underline;
@@ -25,49 +26,65 @@ body{
   width:100%;
 
 }
-.login a{
-  text-decoration: none;
 
-}
 .body-header{
   background: #fff;
-  color:#333;
-  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
   height : 55px;
   position: fixed;
   width:100%;
   text-align: center;
-
-
-
-}
-.flex-bodyheader{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0 80px 0 0;
-
-}
-.nav a:hover {
-  box-shadow: 0 3px  rgba(0,0,0,.15);
-
-
 }
 
-.w3-dropdown-hover a{
-  box-shadow: 0 3px  rgba(0,0,0,.15);
+nav{
+  width:100%;
+  height : 55px;
 
 }
-.nav{
-  align-items: center;
-  display: flex;
-  float:left;
-  margin:0 20px;
-  text-decoration: none;
+
+.nav-item a:hover {
+  box-shadow: 0 5px  rgba(0,0,0,.15);
 }
-h3{
+
+
+h2{
+  color:#333;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
   font-size: 16px;
   text-align: center;
+  margin:0 20px;
+  text-decoration: none;
+  box-shadow: none;
+
+}
+h3{
+  color:#333;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+
+}
+#navbarDropdownMenuLink{
+  color:#333;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+#navbarNavDropdown{
+  margin-left: 200px;
+
+}
+h4{
+  color:#333;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
 }
 
 .body-organe{

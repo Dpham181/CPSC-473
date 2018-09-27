@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title> NY Time </title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="./css/home.css">
 </head>
@@ -14,41 +15,51 @@
     <a class="header-a" href="#test">Takes The Time To School With Special Rates </a>
 
   </div>
+
   <div class="body-header">
 
-<div class="flex-bodyheader">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"  href="https://www.nytimes.com/"><h2>The New Yord Time</h2></a>
 
-    <div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <a  id ="1" class="nav" href="https://www.nytimes.com/"><h3>The New Yord Time</h3> </a>
-    </div>
-    <div>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
 
-      <div class="nav">
-        <a id ="2" class="nav" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8FW9H.html?campaignId=67HX6"><h3>Why The Times?</h3></a>
 
-        <a id ="3" class="nav" href="https://www.nytimes.com/subscriptions/Multiproduct/lp3L3W6.html?campaignId=67HX6"><h3>What You Get</h3></a>
-        <a id ="4" class="nav" href="#home"><h3>Pricing </h3></a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button"><h3>More Options <span class="caret"></span></h3></button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button"><h3>Home Delivery </h3></a>
-            <a href="#" class="w3-bar-item w3-button"><h3>Academis Rates</h3></a>
-            <a href="#" class="w3-bar-item w3-button"><h3>Group Subscriptions</h3></a>
-            <a href="#" class="w3-bar-item w3-button"><h3>Cooking</h3></a>
-            <a href="#" class="w3-bar-item w3-button"><h3>CrossWord</h3></a>
-            <a href="#" class="w3-bar-item w3-button"><h3>Gift</h3></a>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.nytimes.com/subscriptions/Multiproduct/lp8FW9H.html?campaignId=67HX6"><h3>Why The Times?</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.nytimes.com/subscriptions/Multiproduct/lp3L3W6.html?campaignId=67HX6"><h3>What You Get</h3></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><h3>Pricing </h3></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       More Options
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#"><h3>Home Delivery </h3></a>
+          <a class="dropdown-item" href="#"><h3>Academis Rates</h3></a>
+          <a class="dropdown-item" href="#"><h3>Group Subscriptions</h3></a>
+          <a class="dropdown-item" href="#"><h3>Cooking</h3></a>
+          <a class="dropdown-item" href="#"><h3>CrossWord</h3></a>
+          <a class="dropdown-item" href="#"><h3>Gift</h3></a>
 
-          </div>
         </div>
-      </div>
+      </li>
+    </ul>
+  </div>
+  <a class="navbar-brand" href="https://myaccount.nytimes.com/auth/login?URI=https%3A%2F%2Fwww.nytimes.com%2F"><h4>LOG IN</h4></a>
 
-    </div>
-    <div class="login">
-      <a class="login" href="#login"> LOG IN </a>
+</nav>
 
-    </div>
-  </div></div>
+</div>
+
 </header>
 
 <body>
@@ -87,5 +98,7 @@
 
 <footer>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
