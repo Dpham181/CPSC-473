@@ -42,6 +42,7 @@ align-items: center;
 body{
   background: white;
   width:100%;
+  height: 500px;
 
 }
 
@@ -144,6 +145,54 @@ h1{
   justify-content: space-around;
   padding: 90px;
 }
+.flex-body-pagemain2{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 90px;
+  text-align: justify;
+
+
+}
+.flex-body-pagemain3{
+  display: flex;
+  padding: 0  90px;
+}
+.flex-body-pagemain4{
+  display: flex;
+  padding: 0  110px;
+  margin-bottom: 40px;
+}
+.flex-body-pagemain5{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0  90px;
+
+}
+.flex-body-pagemain3 h1{
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 20px;
+
+}
+.flex-body-pagemain5 h1{
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  text-align: justify;
+
+}
+.body-pagefooter{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0  110px;
+
+}
+.body-pagefooter2{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0  110px;
+
+}
 .flex-body-pagemain h1{
   font-size: 20px;
   color:#fff;
@@ -220,7 +269,6 @@ text-decoration: line-through;
 }
 .in2{
   background-color: #0000FF;
-
   height:200px;
   width: 340px;
   border-radius: 5px;
@@ -232,5 +280,80 @@ text-decoration: line-through;
   height:200px;
   width: 340px;
   border-radius: 5px;
+}
+.incheck1{
+  background-color: #fff;
+  width: 340px;
+}
+.incheck2{
+  background-color: #fff;
+  width: 340px;
+}
+.incheck3{
+  background-color: #fff;
+  width: 340px;
+}
+#dimtext{
+  font-size: 12px;
+  color: gray;
+}
+.flex-body-pagemain2 p{
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+}
+.flex-body-pagemain2 h1{
+  font-weight: 200;
+  font-size: 14px;
+}
+.flex-rows{
+  display: flex;
+  flex-direction: row;
 
+}
+.flex-cols{
+  display: flex;
+  flex-direction: column;
+
+}
+.in-flexcols{
+  width: 400px;
+  height: 150px;
+  background-color: 	#708090 ;
+  border: solid;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.in-flexcols h1{
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+.in-flexcols a{
+text-decoration: underline;
+
+}
+#Frenquency{
+  display: none;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+}
+
+.flex-inbox{
+
+  background-color: blue;
+  border-radius: 5px;
+  margin-left: 110px;
+  height: 20px;
+  width: 200px;
+ text-align: center;
+}
+.flex-inbox p{
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  color: #fff;
+}
+footer{
+  background: #333;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  bottom: 0;
 }
