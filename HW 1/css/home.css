@@ -312,15 +312,18 @@ text-decoration: line-through;
 .flex-cols{
   display: flex;
   flex-direction: column;
+  align-items: center;
 
 }
 .in-flexcols{
   width: 400px;
   height: 150px;
-  background-color: 	#708090 ;
-  border: solid;
+  background-color: 	#F0FFFF ;
   margin-bottom: 20px;
   margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .in-flexcols h1{
   margin-left: 15px;
@@ -331,12 +334,32 @@ text-decoration: line-through;
 text-decoration: underline;
 
 }
+.body-pagefooter2 a{
+  color: blue;
+}
+
+
 #Frenquency{
   display: none;
   font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
   font-size: 14px;
+  text-align: justify;
+  margin-left: 100px;
 }
-
+#Frenquency2{
+  display: none;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 100px;
+}
+#Frenquency3{
+  display: none;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 100px;
+}
 .flex-inbox{
 
   background-color: blue;
@@ -356,4 +379,24 @@ footer{
   height: 300px;
   margin-top: 20px;
   bottom: 0;
+}
+.flex-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 110px;
+}
+.flex-footer h1{
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  color: #fff;
+}
+.flex-footer a{
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+button{
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
 }

@@ -11,11 +11,34 @@
   <script>
 function myFunction() {
     var x = document.getElementById("Frenquency");
+
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
     }
+}
+</script>
+<script>
+function myFunction1() {
+  var x = document.getElementById("Frenquency2");
+
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}
+</script>
+<script>
+function myFunction2() {
+  var x = document.getElementById("Frenquency3");
+
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
 }
 </script>
 </head>
@@ -174,31 +197,29 @@ function myFunction() {
     <div>
       <div class="in-flexcols">
         <h1> <p><b> Special Academic Rates </b></p>Student and educators, subscribe to The New Yord times
-        today and save up to 70% on unlimited access to NYtimes.com </h1>
-        <h1> <a href="#Academic">Go To Academic Rate</a> </h1>
+        today and save up to 70% on unlimited access to NYtimes.com <br><br><a href="#Academic">Go To Academic Rate</a></h1>
       </div>
      </div>
     <div><div class="in-flexcols">
       <h1> <p><b> NYT Cooking </b></p>Unlimited access to the entire NYT Cooking recipe database,
       with tools to save and organize your favorites in Your
-    personal Recipe Box </h1>
-      <h1> <a href="#cooking">Get NYT Cooking</a> </h1>
+    personal Recipe Box. <br><br><a href="#cooking">Get NYT Cooking</a></h1>
     </div></div>
     <div><div class="in-flexcols">
-      <h1> <p><b> Group Subscriptions </b></p>Get unlimited NYTimes.com access for organization, at special group rates.</h1>
-      <h1> <a href="#subs">Go to Group Subscriptions</a> </h1>
+      <h1> <p><b> Group Subscriptions </b></p>Get unlimited NYTimes.com access for organization, at special group rates.      <br><br> <a href="#subs">Go to Group Subscriptions</a>
+</h1>
     </div> </div>
 
   </div>
 
   <div class="flex-cols">
     <div><div class="in-flexcols">
-      <h1> <p><b> NYT Crossword </b></p>Play the Crossword and mini puzzles on any device. Daily puzzles edited by Will Shortz, plus 20 years of great puzzles from our archives. </h1>
-      <h1> <a href="#Academic">Get NYT CrossWord</a> </h1>
+      <h1> <p><b> NYT Crossword </b></p>Play the Crossword and mini puzzles on any device. Daily puzzles edited by Will Shortz, plus 20 years of great puzzles from our archives.<br><br> <a href="#Academic">Get NYT CrossWord</a> </h1>
+
     </div> </div>
     <div><div class="in-flexcols">
-      <h1> <p><b>Gift Subcriptions </b></p>Give the gift of unlimited access to NYTimes.com and the NYT app and save up to 50% on your gift subscriptions</h1>
-      <h1> <a href="#Academic">Learn More</a> </h1>
+      <h1> <p><b>Gift Subcriptions </b></p>Give the gift of unlimited access to NYTimes.com and the NYT app and save up to 50% on your gift subscriptions.<br><br><a href="#Academic">Learn More</a> </h1>
+
     </div></div>
 
   </div>
@@ -221,12 +242,28 @@ function myFunction() {
   </div>
   <div class="body-pagefooter2">
   <div>
-    <h1><a onclick="myFunction()"> - What is a digital subscription? What do I get when I subscribe?</a></h1>
+    <a><button> <span onclick="myFunction()">&#x2212;</span></button> What is a digital subscription? What do I get when I subscribe?  </a><br>
+
 
     <div id="Frenquency" >
       <h1>An unlimited New York Times digital subscription provides ongoing access to NYTimes.com from any computer or device, as well as access to the NYT app on portable devices. When you subscribe, you’ll get access to articles and blog posts, as well as video, slide shows and other multimedia features.
     </h1>
   </div>
+  <a><button> <span onclick="myFunction1()">&#x2212;</span></button> I get home delivery of the newspaper. Do I get free access?  </a><br>
+
+  <div id="Frenquency2" >
+    <h1>Yes. Print subscribers to The New York Times get a free Digital Access subscription. This package includes free, unlimited access to NYTimes.com on any device, as well as the NYT app for your smartphone (iPhone® and Android™-powered phones) and your tablet (iPad® and Android-powered tablets). Print subscribers can share Digital Access with a family member. Free, unlimited access is provided to all print subscribers, no matter what type of subscription you have (daily, weekday, Fri.–Sun., etc.). You’ll also qualify for free digital access if your home delivery is provided by a third party (rather than by The New York Times directly). NYTimes home delivery subscriptions do not include e-reader editions or digital versions of The New York Times Crossword.
+
+To activate your digital subscription, you’ll need to connect your home delivery subscription to your NYTimes.com account. If you haven’t already done so, visit this page to connect your accounts.
+  </h1>
+</div>
+<a><button> <span onclick="myFunction2()">&#x2212;</span></button> What is the cancellation and refund policy?</a>
+
+<div id="Frenquency3" >
+  <h1>You can cancel your subscription at any time. When you cancel, we will stop charging your account the following billing cycle. Each billing cycle is four weeks, so your unlimited access will continue for the remainder of the current four-week period.
+
+</h1>
+</div>
 </div>
 <div>
 
@@ -234,13 +271,44 @@ function myFunction() {
   </div>
   <!-- End   Frenquency of page    -->
   <div class="flex-inbox">
-    <p> <a href="#test"> VIEW ALL FAQ </a> </p>
+    <p> <a href="https://help.nytimes.com/hc/en-us/articles/115015852367-Digital-subscriptions"> VIEW ALL FAQ </a> </p>
   </div>
 
 </body>
 
 <footer>
+  <div class="flex-footer" >
+    <div>
+      <h1><img src="./logo/logo1.png" alt="new yord time logo"></h1>
+      <h1>Copyright &copy;2018 </h1>
+    </div>
 
+    <div>
+      <h1><b>About</b></h1>
+      <h1><a href="https://www.nytco.com/">The New York Times Company</a> </h1>
+      <h1><a href="https://help.nytimes.com/hc/en-us/articles/115014892108-Privacy-policy">Privacy Policy </a> </h1>
+      <h1><a href="https://help.nytimes.com/hc/en-us/articles/115014893968-Terms-of-sale">Terms Of Sale </a> </h1>
+    </div>
+
+    <div>
+      <h1><b>Help</b></h1>
+      <h1><a href="https://help.nytimes.com/hc/en-us/articles/115015852367-Digital-subscriptions">Frenquency Asked Questions</a> </h1>
+      <h1><a href="https://help.nytimes.com/hc/en-us">Contact Us</a> </h1>
+      <h1><a href="https://help.nytimes.com/hc/en-us/articles/115015385887-Contact-Us?redir=myacc">Feedback</a> </h1>
+
+    </div>
+
+    <div>
+      <h1><b>Way to Subscribe</b></h1>
+      <h1><a href="https://www.nytimes.com/subscription/multiproduct/lp8HYKU.html?campaignId=6JUHR">Digital + Home Delivery</a> </h1>
+      <h1><a href="https://www.nytimes.com/subscription/edu/lp8LQFK.html?campaignId=6RR8R&campaignId=6RR8R">Education Rates</a> </h1>
+      <h1><a href="http://nytimesgroupsubscriptions.com/?Pardot_Campaign_Code_Form_Input=6XUJR">Group Subcriptions</a> </h1>
+      <h1><a href="https://www.nytimes.com/subscription/games/lp898NC.html?referrer=https://www.nytimes.com/subscription/multiproduct/lp8HYKU.html?campaignId=67HX6&gclid=EAIaIQobChMItbTSi_TC3QIVBcNkCh0WlAVqEAAYASAAEgIGIfD_BwE&dclid=CMzyzY30wt0CFQbdYgod1dsImw&campaignId=6RRWR">NYT Crossword</a> </h1>
+      <h1><a href="https://www.nytimes.com/subscription/multiproduct/lp8R34X.html?campaignId=3FQ4Y">Gift Subcriptions</a> </h1>
+
+    </div>
+
+  </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
