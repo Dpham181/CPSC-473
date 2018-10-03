@@ -173,6 +173,14 @@ h1{
   font-size: 14px;
   text-align: justify;
   margin-left: 20px;
+  color: gray;
+
+}
+.flex-body-pagemain3 b{
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  color: #333;
 
 }
 .flex-body-pagemain5 h1{
@@ -293,16 +301,36 @@ text-decoration: line-through;
   background-color: #fff;
   width: 340px;
 }
+.incheck3 b{
+  background-color: red;
+  border-radius: 5px;
+  color: #fff;
+}
+.incheck2 b{
+  background-color: red;
+  border-radius: 5px;
+  color: #fff;
+}
+#test{
+  color: #333;
+  background-color: #fff;
+}
+#test2{
+  color: #333;
+  background-color: #fff;
+}
 #dimtext{
   font-size: 12px;
   color: gray;
 }
+
 .flex-body-pagemain2 p{
   font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
 }
 .flex-body-pagemain2 h1{
   font-weight: 200;
   font-size: 14px;
+  color: #333;
 }
 .flex-rows{
   display: flex;
@@ -334,8 +362,9 @@ text-decoration: line-through;
 text-decoration: underline;
 
 }
-.body-pagefooter2 a{
+.body-pagefooter2 b{
   color: blue;
+  font-size: 14px;
 }
 
 
@@ -365,9 +394,9 @@ text-decoration: underline;
   background-color: blue;
   border-radius: 5px;
   margin-left: 110px;
-  height: 20px;
-  width: 200px;
- text-align: center;
+  height: 25px;
+  width: 170px;
+  text-align: center;
 }
 .flex-inbox p{
   font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
@@ -399,4 +428,5 @@ button{
   background-color: #fff;
   border: none;
   cursor: pointer;
+  color: blue;
 }
