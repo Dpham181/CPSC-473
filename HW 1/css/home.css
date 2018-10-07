@@ -23,7 +23,7 @@ width: 100%;
 }
 .navbar-brand {
 display: flex;
-justify-content: flex-start;
+justify-content: center;
 align-items: center;
 }
 
@@ -369,6 +369,13 @@ text-decoration: underline;
 
 
 #Frenquency{
+  display: none;
+  font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 100px;
+}
+#Frenquency1{
   display: none;
   font-family: nyt-franklin,Helvetica Neue,Arial,sans-serif;
   font-size: 14px;
