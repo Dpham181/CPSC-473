@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title>Database Students Scores </title>
 
     <script src="./js/events.js"></script>
@@ -17,17 +18,28 @@
       <section id="flex-body">
       <div class="search-box">
         <form  id = "form-input">
-        <input type="text" name="lastname" id ="lastname" placeholder="Enter your last name here">
+        <label> Last Name:</lable>
+        <input type="text" name="lastname" id ="lastname"  placeholder="Enter your last name here" required>
         <input type="submit" id= "searchname" value="search" >
         </form>
       </div>
       <!-- tables to get all the data from checking with js   -->
 
       <div class="table-box">
-        <table id="items_table" class="tablecss">
+
+       <div >
+        <table id="student_table" >
+         <tr> <td> Students founds: </td></tr>
+      
+
+         </table>
+       </div>
+
+        <div >
+        <table id="records_table" >
          <tr><td>COURSE</td><td>GPA</td></tr>
          </table>
-
+       </div>
       </div>
       </section>
 
