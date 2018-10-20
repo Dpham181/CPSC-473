@@ -1,3 +1,6 @@
+Name: DANH CONG PHAM
+CWID: 802947341
+
 CPSC 473 Assignment #2
 Due Date: 11/09
 In this homework assignment, you will build a simple web page for users to find students’
