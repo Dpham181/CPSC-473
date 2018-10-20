@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Database Students Scores </title>
+<head>
+  <meta charset="utf-8">
 
-    <script src="./js/events.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-  </head>
-   <header>
+  <title>Database Students Scores </title>
 
-      <h1> SEARCHING STUDENT RECORDS </h1>
+  <script src="./js/events.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<header>
 
-   </header>
-  <body>
-    <!-- box for input with searching input button and input data  -->
-      <section id="flex-body">
-      <div class="search-box">
-        <form  id = "form-input">
+  <h1> SEARCHING STUDENT RECORDS </h1>
+
+</header>
+
+<body>
+  <!-- box for input with searching input button and input data  -->
+  <section id="flex-body">
+    <div class="search-box">
+      <form id="form-input">
         <label> Last Name:</lable>
-        <input type="text" name="lastname" id ="lastname"  placeholder="Enter your last name here" required>
-        <input type="submit" id= "searchname" value="search" >
-        </form>
+          <input type="text" name="lastname" id="lastname" placeholder="Enter your last name here" required>
+          <input type="submit" id="searchname" value="Search">
+          <input type="button" onClick="window.location.reload()" value="Refresh Page">
+
+      </form>
+    </div>
+    <!-- tables to get all the data from checking with js   -->
+
+    <div class="table-box">
+      <div>
+        <div class="student_table_box">
+          <label> Students founds: </label>
+
+          <table id="student_table">
+          </table>
+        </div>
       </div>
-      <!-- tables to get all the data from checking with js   -->
+      <div>
+        <div class="records_table_box">
+          <label id="student_name"> </label>
 
-      <div class="table-box">
-
-       <div >
-        <table id="student_table" >
-         <tr> <td> Students founds: </td></tr>
-      
-
-         </table>
-       </div>
-
-        <div >
-        <table id="records_table" >
-         <tr><td>COURSE</td><td>GPA</td></tr>
-         </table>
-       </div>
+          <table id="records_table">
+            <tr>
+              <td>COURSE</td>
+              <td>GPA</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      </section>
+    </div>
+  </section>
 
 </body>
 
 <footer>
   <div class="footer-container">
-        <h1> <b> CPSC-473 </b> </h1>
-        <h1>  Assigment II By Danh  Pham </h1>
+    <h1> <b> CPSC-473 </b> </h1>
+    <h1> Assigment II By Danh Pham </h1>
   </div>
 </footer>
+
 </html>

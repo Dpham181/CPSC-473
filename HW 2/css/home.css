@@ -7,19 +7,24 @@ top:0;
 position: fixed;
 font-family: fantasy;
 color:#fff;
+border-bottom: 2px solid Tomato;
+
 }
 body{
 margin-top: 150px;
 background-color: #fff;
 font-family: fantasy;
+
 }
 footer{
   background-color: #333;
   width: 100%;
-  height: 100px;
+  height: 120px;
   text-align: center;
   font-family: fantasy;
   color:#fff;
+  border-top: 2px solid Tomato;
+  border-bottom: 2px solid Tomato;
 
 }
 section{
@@ -30,10 +35,11 @@ section{
 .footer-container{
   bottom: 0;
 }
-table, tr, td {
+.records_table table, tr, td {
     border: 1px solid black;
     width:100%
 }
+
 .footer-container{
   margin-top: 20px;
   bottom:0;
@@ -51,4 +57,20 @@ table, tr, td {
   justify-content: space-around;
   align-items: center;
 
+}
+.student_table_box{
+  box-shadow: 5px 10px #888888;
+
+  border: 5px solid #888888;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+}
+.records_table_box{
+  box-shadow: 5px 10px #888888;
+
+  border: 5px solid #888888;
+  height: 500px;
+  width: 500px;
 }

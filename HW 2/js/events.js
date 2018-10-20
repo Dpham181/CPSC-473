@@ -50,34 +50,68 @@ let gpas = [
 
 let students_records = [
 {
-    name: students[0].firstname,
+    fname: students[0].firstname,
+    lname: students[0].lastname,
     course: courses[0].Course,
     gpa: gpas[1].gpa
 
 },
 {
-    name: students[1].firstname,
+    fname: students[0].firstname,
+    lname: students[0].lastname,
+    course: courses[2].Course,
+    gpa: gpas[1].gpa
+
+},
+{
+    fname: students[1].firstname,
+    lname: students[1].lastname,
     course: courses[2].Course,
     gpa: gpas[2].gpa
 
 },
 {
-    name: students[2].firstname,
+    fname: students[2].firstname,
+    lname: students[2].lastname,
     course: courses[2].Course,
     gpa: gpas[2].gpa
 
 },
 
 {
-    name: students[1].firstname,
+    fname: students[1].firstname,
+    lname: students[1].lastname,
     course: courses[1].Course,
     gpa: gpas[1].gpa
 
 },
 {
-    name: students[0].firstname,
+    fname: students[4].firstname,
+    lname: students[4].lastname,
+    course: courses[2].Course,
+    gpa: gpas[2].gpa
+
+},
+
+{
+    fname: students[3].firstname,
+    lname: students[3].lastname,
     course: courses[1].Course,
     gpa: gpas[2].gpa
+
+},
+{
+    fname: students[3].firstname,
+    lname: students[3].lastname,
+    course: courses[2].Course,
+    gpa: gpas[0].gpa
+
+},
+{
+    fname: students[4].firstname,
+    lname: students[4].lastname,
+    course: courses[1].Course,
+    gpa: gpas[1].gpa
 
 }
 ];
@@ -108,64 +142,64 @@ function addFormListener() {
       // getting id for table before use to generate records
       var students_table = document.getElementById('student_table');
       var student_firstname = null;
+      var found = [];
       for ( var i = 0 ; i < students.length ; i++){
 
         // searching to our records with the input name from users
         if  (students[i].lastname == lastname[0]){
 
             console.log( students[i].fullname );
-            // generate table with inner html method
-           students_table.innerHTML+= '<tr><td><button id="button" value= "'  +students[i].firstname+ '">'+ students[i].fullname + ' </button></td><td>';
+            // push founded students to our found array to minize the search
+            found.push(new student (students[i].firstname,students[i].lastname) );
 
                 }
 
+      }
+      console.log(found);
+      var k = 0;
+      // checking if we fould the student last name in our records
+      if(found.length < 1 || found == undefined){
+        students_table.innerHTML+= '<tr><td>'+ "Empty"+ '</td><tr>';
+        alert("(Your name doesnts match with our records)");
+        alert("Please Refresh Page Before Searching New Records");
+
+          // if not then empty
+      }else {
+        for(var i = 0 ; i < found.length ; i++){ // else then generate list of students founded
+          students_table.innerHTML+= '<tbody><tr><td>'+ found[i].fullname + '</td><tr></tbody>';
+        }
+        alert("Please Refresh Page Before Searching New Records");
 
       }
-      students_table.addEventListener('click', function(event) {
-        event.preventDefault();
+  students_table.addEventListener('click', function(){myFunction(event)}, false);
 
-        var elm = document.getElementById('button');
-        var firstname = elm.value;
-        console.log(firstname);
-        var records_table = document.getElementById('records_table');
+  function myFunction()
+  {
+    var col = window.event.target.cellIndex;
+    var row = window.event.target.parentNode.rowIndex;
+    console.log('Col index is: ' + col + '\nRow index is: ' + row /2);
+    var nRow = row/2;
+    var records_table = document.getElementById('records_table');
+    var student_name = document.getElementById('student_name');
+    student_name.innerHTML+=  "Grades for   " + found[nRow].fullname + "  :" +'<br>';
 
-          for ( var i = 0 ; i < students_records.length ; i++){
+    for ( var i = 0 ; i < students_records.length ; i++){
 
-            // searching to our records with the input name from users
-            if  (students_records[i].name == firstname){
+      // searching to our records with the input first name from users
+      if  (students_records[i].fname == found[nRow].firstname){
 
-                console.log( students_records[i].course );
-                console.log( students_records[i].gpa );
+          console.log( students_records[i].course );
+          console.log( students_records[i].gpa );
 
-                // generate table with inner html method
-    	           records_table.innerHTML+= '<tr><td>' + students_records[i].course + '</td><td>' + students_records[i].gpa + '</td></tr>';
+          // generate table with inner html method
+           records_table.innerHTML+= '<tr><td>' + students_records[i].course + '</td><td>' + students_records[i].gpa + '</td></tr>';
 
-                    }
+              }
+}
 
+  alert("Please Refresh Page Before Searching New Records");
+  }
 
-          }
-});
-
-// looping to records to see with there any name that matches
-/*
-    var items_table = document.getElementById('records_table');
-
-      for ( var i = 0 ; i < students_records.length ; i++){
-
-        // searching to our records with the input name from users
-        if  (students_records[i].name == lastname[0]){
-
-            console.log( students_records[i].course );
-            console.log( students_records[i].gpa );
-
-            // generate table with inner html method
-	           items_table.innerHTML+= '<tr><td>' + students_records[i].course + '</td><td>' + students_records[i].gpa + '</td></tr>';
-
-                }
-
-
-      }
-*/
 
 		});
 	}
