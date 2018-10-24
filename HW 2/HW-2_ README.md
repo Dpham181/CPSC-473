@@ -5,6 +5,13 @@ CPSC 473 Assignment #2
 Due Date: 11/09
 In this homework assignment, you will build a simple web page for users to find students’
 
+Records test case:
+
+new student("Danh", "Pham"),
+new student("Henrry", "Do"),
+new student("Thomas", "Ngo"),
+new student("Danny", "Pham"),
+new student("Steven", "Pham")
 
 
 

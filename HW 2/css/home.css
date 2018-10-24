@@ -35,11 +35,13 @@ section{
 .footer-container{
   bottom: 0;
 }
-.records_table table, tr, td {
+#records_table table, tr, td {
     border: 1px solid black;
     width:100%
 }
-
+#student_table td{
+  border: none;
+}
 .footer-container{
   margin-top: 20px;
   bottom:0;
