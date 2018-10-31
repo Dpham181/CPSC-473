@@ -68,6 +68,7 @@ section{
   width: 500px;
   display: flex;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .records_table_box{
   box-shadow: 5px 10px #888888;

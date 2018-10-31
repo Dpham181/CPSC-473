@@ -14,11 +14,11 @@ class student {
 
 // students name records
 let students = [
-  new student("Danh", "Pham"),
-  new student("Henrry", "Do"),
-  new student("Thomas", "Ngo"),
-  new student("Danny", "Pham"),
-  new student("Steven", "Pham")
+  new student("danh", "pham"),
+  new student("henrry", "do"),
+  new student("thomas", "ngo"),
+  new student("danny", "pham"),
+  new student("steven", "pham")
 
 
 
@@ -138,7 +138,8 @@ function addFormListener() {
         // checking type with is undefined for testing method
       if (typeof elm[i].attributes.id !== "undefined") {
         if (elm[i].attributes.id.value == "lastname") {
-          lastname.push(elm[i].value);
+          var name = String(elm[i].value);
+          lastname.push(name.toLowerCase());
         }
       }
     }
@@ -184,7 +185,7 @@ function addFormListener() {
         for(var i = 0 ; i < found.length ; i++){ // else then generate list of students founded
 
 
-          students_table.innerHTML+= '<tbody><tr><td>'+ found[i].fullname + '</td><tr></tbody>';
+          students_table.innerHTML+= '<tbody><tr><td>'+ found[i].fullname.toUpperCase() + '</td><tr></tbody>';
         }
 
       }
@@ -207,7 +208,7 @@ function addFormListener() {
       }
 
     }
-    student_name.innerHTML+=  "Grades for   " + found[nRow].fullname + "  :" +'<br>';
+    student_name.innerHTML+=  "Grades for   " + found[nRow].fullname.toUpperCase() + "  :" +'<br>';
     for ( var i = 0 ; i < students_records.length ; i++){
 
       // searching to our records with the input first name from users
