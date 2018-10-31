@@ -54,26 +54,26 @@ section{
 }
 .table-box{
   margin-top: 50px;
-
   display: flex;
   justify-content: space-around;
-  align-items: center;
-
+  width: 80%;
 }
 .student_table_box{
-  box-shadow: 5px 10px #888888;
 
   border: 5px solid #888888;
   height: 500px;
   width: 500px;
-  display: flex;
-  justify-content: flex-start;
   cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  position: absolute;
 }
 .records_table_box{
-  box-shadow: 5px 10px #888888;
-
+  background: rgba(0,0,0,0.5);
+  box-sizing: border-box;
   border: 5px solid #888888;
   height: 500px;
   width: 500px;
+  position: absolute;
+
 }
