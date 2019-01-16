@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="css/site.css">
+
+  </head>
+
+<body onLoad="studentController.loadStudentList();">
+<div style="text-align: center">
+    <div class="all">
+        <h1>Student List</h1>
+        <span style="font-size: 1.2em;">Student Name:</span>
+        <input type="text" id="searchInput" placeholder="Search for student name.." title="Type in a name">
+        <button id="searchButton" class="studentButton" onclick="studentController.search();">Search</button>
+        <button id="showAllButton" class="studentButton" onclick="studentController.loadStudentList();">Show All</button>
+    </div>
+    <div class="all">
+        <div id="maincontent" style="text-align: center"></div>
+        <div id="courseDetail">
+            <div id ="courseTitle"></div>
+            <div id="courseGrdes">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+<script id="student-template" type="text/x-handlebars-template">
+    <!--template for student table-->
+    <table class="master-detail-grid" id="studentTable" style="border: 1px dashed rgb(59, 97, 156); border-image: none; cursor: pointer;">
+        <tbody>
+            <tr class="header"><th style="width: 100%;">Name</th></tr>
+            {{#each this}}
+            <tr onclick="studentController.showDetail({{id}}, '{{firstName}} {{lastName}}')"><td id="{{id}}"> {{firstName}} {{lastName}}</td></tr>
+            {{/each}}
+        </tbody>
+    </table>
+</script>
+
+<!--template for course-->
+<script id="course-template" type="text/x-handlebars-template">
+    <!--template for student table-->
+    <table class="master-detail-grid" id="courseTable" style="border: 1px dashed rgb(59, 97, 156); border-image: none; cursor: pointer;">
+        <tbody>
+            <tr class="header"><th style="width: 50%;">Course</th><th style="width: 50%;">GPA</th></tr>
+            {{#each this}}
+            <tr><td>{{course}}</td><td> {{grade}}</td></tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+
+</script>
+<script src="javascripts/model/StudentModel.js"></script>
+<script src="javascripts/view/StudentView.js"></script>
+<script src="javascripts/control/StudentController.js"></script>
+</body>
+</html>
